@@ -1,0 +1,53 @@
+{
+  "name": "@rogeriq/sdk",
+  "version": "0.1.0",
+  "description": "Official TypeScript SDK for the RogerIQ API. Manage conversations, contacts, knowledge base, widget, integrations, and webhooks from any Node.js / browser / Workers / edge runtime.",
+  "license": "MIT",
+  "homepage": "https://docs.rogeriq.com/sdk/quickstart",
+  "bugs": {
+    "url": "https://github.com/RogerIQ/sdk/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RogerIQ/sdk.git"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean --target es2022",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tsup": "^8.3.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "rogeriq",
+    "sdk",
+    "customer-support",
+    "helpdesk",
+    "ai-agent",
+    "webhooks",
+    "typescript"
+  ]
+}
