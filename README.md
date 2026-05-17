@@ -1,7 +1,3 @@
-> **Mirror.** This repository is auto-synced from the [`sdk/`](https://github.com/seangeng/rogeriq/tree/main/sdk)
-> subdirectory of the rogeriq monorepo on every push to main. **Open issues + PRs there, not here** — anything filed
-> against this repo will be overwritten on the next sync. Releases are published to npm from the monorepo.
-
 # `@rogeriq/sdk`
 
 Official TypeScript SDK for the [RogerIQ](https://rogeriq.com) API. Runs
